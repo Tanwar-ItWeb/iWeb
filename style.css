@@ -1,0 +1,193 @@
+/*
+Theme Name: iWeb
+Theme URI: https://github.com/Tanwar-ItWeb/iWeb
+Author: Vishal Tanwar
+Author URI: https://github.com/Tanwar-ItWeb
+Version: 1.0.0
+Description: Hii! This is Simplest and easy wordpres theme and it have required minimum   
+Tags: Sidebar_template, Full Width Template, Single Page Template 
+Licence: GNU General Public License v3.0
+Licence URI: LICENCE
+Text Domain: iWeb 
+*/
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.nav > li {
+  display: block;
+  position: relative; }
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 15px 10px; }
+
+.pull-right {
+  float: right !important; }
+
+.navbar-inverse {
+  background: #ffffff; }
+
+.navbar-nav > li {
+  float: left; }
+
+.navbar-nav {
+  float: left;
+  margin: 0; }
+
+.navbar-logo {
+  padding: 16px 15px;
+  float: left;
+  font-size: 20px;
+  line-height: 20px; }
+.navbar-logo:hover {
+  color: #f47021; }
+
+.navbar-brand {
+  padding: 3px 15px;
+  float: left;
+  width: 100%;
+  max-width: 200px; }
+
+.navHead {
+  background-color: #fff;
+  padding: 0 15px; }
+
+.navbar-header {
+  float: left; }
+.navbar-header > a {
+  color: #ffffff; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #2b2e3e; }
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:active, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #f47021;
+  background: #ffffff; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover {
+  color: #f47021;
+  background: #ffffff; }
+
+.navbar-nav {
+  padding: 0 30px; }
+.navbar-nav > li > a::after, .navbar-nav > li > a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #f47021;
+  bottom: 0;
+  -webkit-transition: width 0.3s ease-in;
+  -moz-transition: width 0.3s ease-in;
+  -ms-transition: width 0.3s ease-in;
+  -o-transition: width 0.3s ease-in;
+  transition: width 0.3s ease-in; }
+.navbar-nav > li > a::after {
+  left: 50%; }
+.navbar-nav > li > a::before {
+  right: 50%; }
+.navbar-nav > li > a:hover::after, .navbar-nav > li > a:hover::before {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in;
+  -moz-transition: width 0.3s ease-in;
+  -ms-transition: width 0.3s ease-in;
+  -o-transition: width 0.3s ease-in;
+  transition: width 0.3s ease-in; }
+.navbar-nav > li.active > a::after, .navbar-nav > li.active > a::before {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in;
+  -moz-transition: width 0.3s ease-in;
+  -ms-transition: width 0.3s ease-in;
+  -o-transition: width 0.3s ease-in;
+  transition: width 0.3s ease-in; }
+
+.dropdown:hover .dropdown-list {
+  margin: 0;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in; }
+.dropdown-list {
+  padding: 0;
+  margin-top: 30px;
+  position: absolute;
+  width: 200px;
+  visibility: hidden;
+  background-color: #ffffff;
+  opacity: 0;
+  z-index: 9;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in; }
+.dropdown-list > li {
+  float: none;
+  width: 100%;
+  padding: 0;
+  position: relative; }
+.dropdown-list > li > a {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #282d3f; }
+.dropdown-list > li > a::after, .dropdown-list > li > a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #f47021;
+  bottom: 0;
+  -webkit-transition: width 0.3s ease-in;
+  -moz-transition: width 0.3s ease-in;
+  -ms-transition: width 0.3s ease-in;
+  -o-transition: width 0.3s ease-in;
+  transition: width 0.3s ease-in; }
+.dropdown-list > li > a::after {
+  left: 50%; }
+.dropdown-list > li > a::before {
+  right: 50%; }
+.dropdown-list > li > a:hover::after, .dropdown-list > li > a:hover::before {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in;
+  -moz-transition: width 0.3s ease-in;
+  -ms-transition: width 0.3s ease-in;
+  -o-transition: width 0.3s ease-in;
+  transition: width 0.3s ease-in; }
+.dropdown-list > li > a:hover {
+  color: #f47021; }
+
+.main-head {
+  background-color: #313047;
+  color: #ffffff; }
+.main-head .headAddress {
+  text-align: right; }
+.main-head .xs-12.extra h2 {
+  text-align: right;
+  float: left;
+  color: #f2df0f;
+  line-height: 1.2;
+  font-size: x-large;
+  padding-bottom: 5px;
+  text-shadow: -1px -1px 1px #bbe40b; }
+.main-head .xs-12.extra h2 marquee {
+  z-index: 999; }
+.main-head .headContactOne, .main-head .headContactTwo, .main-head .headAddress {
+  display: block;
+  padding: 15px 30px; }
+.main-head .phone-icon {
+  width: 100%;
+  max-width: 25px;
+  float: left; }
+.main-head .phone-number {
+  margin: 0 15px;
+  line-height: 1.97864;
+  float: left; }
+.main-head .headContactTwo {
+  margin-left: -45px; }
+
+/*# sourceMappingURL=style.css.map */

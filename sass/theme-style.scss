@@ -1,0 +1,226 @@
+/*
+Theme Name: iWeb
+Theme URI: https://github.com/Tanwar-ItWeb/iWeb
+Author: Vishal Tanwar
+Author URI: https://github.com/Tanwar-ItWeb
+Version: 1.0.0
+Description: Hii! This is Simplest and easy wordpres theme and it have required minimum   
+Tags: Sidebar_template, Full Width Template, Single Page Template 
+Licence: GNU General Public License v3.0
+Licence URI: LICENCE
+Text Domain: iWeb 
+*/
+
+$font-stack:   Arial, "Helvetica Neue", Helvetica, sans-serif;
+$fontColor: #f47021;
+$HfontColor: #ffffff;
+$navBgColor: #282d3f;
+$fSize: 14px;
+$lh: 1.47864;
+$w: 100%;
+$colmnp: 15px;
+@mixin box-sizing($type){
+ -webkit-box-sizing: $type;
+ -moz-box-sizing: $type;
+ box-sizing: $type;
+ }
+@mixin transition($prop) {
+   -webkit-transition: $prop;
+   -moz-transition: $prop;
+   -ms-transition: $prop;
+   -o-transition: $prop;
+   transition: $prop;
+ }
+.nav{
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav{
+  >li{
+    display: block;
+    position: relative;
+    >a{
+      position: relative;
+      display: block;
+      padding: 15px 10px;
+   }
+  }
+}
+.pull-right{
+  float: right!important;
+}
+.navbar-inverse
+{
+  background: $HfontColor;
+}
+.navbar-nav{
+  >li{
+    float: left;
+  }
+}
+.navbar-nav{
+  float: left;
+  margin: 0;
+}
+.navbar-logo
+{
+  padding:16px 15px;
+  float: left;
+  font-size:20px;
+  line-height:20px;
+  &:hover
+  {
+    color:$fontColor;
+  }
+}
+.navbar-brand{
+  padding:3px 15px;
+  float:left;
+  width:100%;
+  max-width:200px;
+}
+.navHead{background-color: #fff;padding:0 15px;}
+.navbar-header
+{
+  float: left;
+  &>a{
+    color: #ffffff;
+  }
+}
+.navbar-inverse .navbar-nav>li>a{
+  color: #2b2e3e;
+  &:hover,&:active,&:focus{
+    color: $fontColor;
+    background: $HfontColor;
+  }
+}
+.navbar-inverse .navbar-nav>.active{
+&>a,&>a:hover{
+  color: $fontColor;
+  background: $HfontColor;
+ }
+}
+.navbar-nav {
+  padding: 0 30px;
+  &>li>a::after,&>li>a::before{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: $fontColor;
+    bottom:0;
+    @include transition(width 0.3s ease-in) ;
+  }
+  &>li>a::after{
+    left:50%;
+  }
+  &>li>a::before{
+    right:50%;
+  }
+  &>li>a{
+    &:hover::after,&:hover::before{
+    width:50%;
+    @include transition(width 0.3s ease-in) ;
+   }
+  }
+  &>li.active>a{
+    &::after,&::before{
+    width:50%;
+    @include transition(width 0.3s ease-in) ;
+   }
+  }
+}
+.dropdown{
+  &:hover &-list
+  {
+    margin:0;
+    opacity:1;
+    visibility: visible;
+    @include transition(all 0.4s ease-in);
+  }
+  &-list{
+    padding:0;
+    margin-top:30px;
+    position: absolute;
+    width:200px;
+    visibility: hidden;
+    background-color: $HfontColor ;
+    opacity:0;
+    z-index: 9;
+    @include transition(all 0.4s ease-in);
+  }
+  &-list>li
+  {
+    float:none;
+    width:100%;
+    padding:0;
+    position: relative;
+  }
+  &-list>li>a
+  {
+    display: block;
+    margin:0;
+    padding: 10px;
+    color:$navBgColor;
+  }
+  &-list>li>a::after,&-list>li>a::before{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: $fontColor;
+    bottom:0;
+    @include transition(width 0.3s ease-in) ;
+  }
+  &-list>li>a::after{
+    left:50%;
+  }
+  &-list>li>a::before{
+    right:50%;
+  }
+  &-list>li>a{
+    &:hover::after,&:hover::before{
+    width:50%;
+    @include transition(width 0.3s ease-in) ;
+   }
+   &:hover{
+     color: $fontColor;
+   }
+  }
+}
+.main-head{
+background-color: #313047;
+color:$HfontColor ;
+& .headAddress{
+text-align: right;
+  }
+  .xs-12.extra h2 {
+    text-align:right;
+    float:left;
+    color: #f2df0f;
+    line-height: 1.2;
+    font-size: x-large;
+    padding-bottom: 5px;
+    text-shadow: -1px -1px 1px #bbe40b;
+    & marquee{
+    z-index: 999;}
+  }
+.headContactOne,.headContactTwo,.headAddress{
+  display:block;
+  padding: $colmnp $colmnp*2;
+}
+& .phone-icon{
+  width:100%;
+  max-width:25px;
+  float:left;
+}
+& .phone-number{
+  margin:0 15px;
+  line-height: $lh +.5;
+  float:left;
+}
+.headContactTwo{
+  margin-left: -45px;
+}
+}
