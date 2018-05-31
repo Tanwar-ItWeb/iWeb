@@ -8,7 +8,7 @@ add_action('wp_enqueue_scripts', '_iweb_scripts');
 // Add Navigation Locations
 function iweb_custom_menu(){
   register_nav_menus(array(
-    'top_header'     => __( 'Social Menu' ),
+    'top_header'     => __( 'Social Menu'),
     'primary_menu'   => __( 'Header Menu'),
     'secondary_menu' => __( 'Footer Menu')
   ));
